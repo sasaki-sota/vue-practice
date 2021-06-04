@@ -1,4 +1,11 @@
-## Vue.js
+# Vue.js
+
+## data属性
+体感だとreactでの**useState**のようなものな気がする
+
+## method属性
+言葉の通りだが関数(function)を記述する  
+
 
 ### v-bind
 
@@ -26,14 +33,18 @@ v-ifとほぼ同じ
 
 
 ### v-for
-```:index.html
+```
+index.html
+
     <ul>
         <li v-for="detail in details">{{ detail }}</li>
     </ul>
     <div v-for="variant in variants" :key="variant.id">{{ variant.color }}</div>
 ```
 
-```:main.js
+```
+main.js
+
             details: ["1 list", "2 list", "3 list"],
             variants: [
                 {
@@ -48,3 +59,10 @@ v-ifとほぼ同じ
 ```
 とリスト形式で表示する。  
 **オブジェクト指向**で平気そう  
+
+### v-on
+主にクリックアクションに利用  
+reactでの**onClick属性のような働き**  
+実際の処理はjsファイルのmethodsの中に記述するようになっている  
+`    <button class="button" v-on:click="addToCart">Add to Cart</button>
+`  

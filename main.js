@@ -14,7 +14,14 @@ const app = Vue.createApp({
                     id: 2235,
                     color: "yellow"
                 },
-            ]
+            ],
+            cart: 0,
+        }
+    },
+    methods: {
+        addToCart() {
+            // this.cartはdata属性のcartをさす
+            this.cart += 1
         }
     }
 })
