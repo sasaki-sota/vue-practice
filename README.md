@@ -25,3 +25,26 @@ v-ifとほぼ同じ
 > とても頻繁に何かを切り替える必要があれば v-show を選び、条件が実行時に変更することがほとんどない場合は、v-if を選びます。  
 
 
+### v-for
+```:index.html
+    <ul>
+        <li v-for="detail in details">{{ detail }}</li>
+    </ul>
+    <div v-for="variant in variants" :key="variant.id">{{ variant.color }}</div>
+```
+
+```:main.js
+            details: ["1 list", "2 list", "3 list"],
+            variants: [
+                {
+                    id: 2234,
+                    color: "red"
+                },
+                {
+                    id: 2235,
+                    color: "yellow"
+                },
+            ]
+```
+とリスト形式で表示する。  
+**オブジェクト指向**で平気そう  

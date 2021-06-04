@@ -3,7 +3,18 @@ const app = Vue.createApp({
         return {
             product: "Hello world",
             image: './images/test.jpeg',
-            inStock: true
+            inStock: true,
+            details: ["1 list", "2 list", "3 list"],
+            variants: [
+                {
+                    id: 2234,
+                    color: "red"
+                },
+                {
+                    id: 2235,
+                    color: "yellow"
+                },
+            ]
         }
     }
 })
