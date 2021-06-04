@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>Vue Practice</title>
     <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="app">
     <h1>{{ product }}</h1>
+    <div class="product-image">
+
+    </div>
+    <img v-bind:src="image">
 </div>
 
 <!--import-->
