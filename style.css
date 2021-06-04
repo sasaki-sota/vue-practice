@@ -7,3 +7,17 @@ img {
     color: white;
     background-color: aquamarine;
 }
+
+.color-radius {
+    width: 50px;
+    height: 50px;
+    margin-top: 8px;
+    border: 2px solid darkgray;
+    border-radius: 50%;
+}
+
+.disabledButton {
+    background-color: azure;
+    cursor: not-allowed;
+    color: black;
+}

@@ -18,8 +18,21 @@
     <ul>
         <li v-for="detail in details">{{ detail }}</li>
     </ul>
-    <div v-for="variant in variants" :key="variant.id">{{ variant.color }}</div>
-    <button class="button" v-on:click="addToCart">Add to Cart</button>
+    <!--            :colorと記述するのに注意、キャメルケースで書いた方が楽（スネークだとちょっと書き方変わる）-->
+    <div
+            v-for="variant in variants"
+            :key="variant.id"
+            @mouseover="updateImage(variant.image)"
+            class="color-radius"
+            :style="{backgroundColor: variant.color}">
+    </div>
+<!--    inStock出ない時の処理とボタンの色-->
+    <button
+            class="button"
+            @click="addToCart"
+            :disabled="!inStock"
+            :class="{disabledButton: !inStock}"
+    >Add to Cart</button>
 </div>
 
 <!--import-->

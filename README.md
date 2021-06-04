@@ -4,7 +4,10 @@
 体感だとreactでの**useState**のようなものな気がする
 
 ## method属性
-言葉の通りだが関数(function)を記述する  
+言葉の通りだが関数(function)を記述する
+
+## @の利用
+`@mouseover`などを定義することができる
 
 
 ### v-bind
@@ -66,3 +69,7 @@ reactでの**onClick属性のような働き**
 実際の処理はjsファイルのmethodsの中に記述するようになっている  
 `    <button class="button" v-on:click="addToCart">Add to Cart</button>
 `  
+**<span style="color: red; ">@click</span>** で代用可能
+
+#### disabled
+クリックできないようにする時に利用
