@@ -2,7 +2,8 @@ const app = Vue.createApp({
     data() {
         return {
             product: "Hello world",
-            image: './images/test.jpeg'
+            image: './images/test.jpeg',
+            inStock: true
         }
     }
 })

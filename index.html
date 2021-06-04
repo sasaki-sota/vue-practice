@@ -10,9 +10,10 @@
 <div id="app">
     <h1>{{ product }}</h1>
     <div class="product-image">
-
+        <img v-bind:src="image">
     </div>
-    <img v-bind:src="image">
+    <p v-if="inStock">In Stock</p>
+    <p v-else>Out of Stock</p>
 </div>
 
 <!--import-->
